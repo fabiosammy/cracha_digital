@@ -1,4 +1,5 @@
 ActiveAdmin.register OldSystem do
+  permit_params :username, :version
 
 
   # See permitted parameters documentation:
