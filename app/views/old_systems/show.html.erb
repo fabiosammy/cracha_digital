@@ -1,0 +1,14 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Username:</strong>
+  <%= @old_system.username %>
+</p>
+
+<p>
+  <strong>Version:</strong>
+  <%= @old_system.version %>
+</p>
+
+<%= link_to 'Edit', edit_old_system_path(@old_system) %> |
+<%= link_to 'Back', old_systems_path %>

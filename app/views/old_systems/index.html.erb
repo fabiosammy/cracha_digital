@@ -1,0 +1,27 @@
+<h1>Listing old_systems</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Username</th>
+      <th>Version</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @old_systems.each do |old_system| %>
+      <tr>
+        <td><%= old_system.username %></td>
+        <td><%= old_system.version %></td>
+        <td><%= link_to 'Show', old_system %></td>
+        <td><%= link_to 'Edit', edit_old_system_path(old_system) %></td>
+        <td><%= link_to 'Destroy', old_system, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Old system', new_old_system_path %>
