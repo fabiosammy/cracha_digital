@@ -1,6 +1,5 @@
-<h1>Editing old_system</h1>
-
-<%= render 'form' %>
-
-<%= link_to 'Show', @old_system %> |
-<%= link_to 'Back', old_systems_path %>
+<%- model_class = OldSystem -%>
+<div class="page-header">
+  <h1><%=t '.title', :default => [:'helpers.titles.edit', 'Edit %{model}'], :model => OldSystem %></h1>
+</div>
+<%= render :partial => 'form' %>
