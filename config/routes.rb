@@ -1,4 +1,6 @@
 Rails.application.routes.draw do
+  get 'landings/index'
+
   resources :old_systems
 
   devise_for :admin_users, ActiveAdmin::Devise.config
